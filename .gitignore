@@ -6,6 +6,10 @@
 __pycache__/
 *.py[cod]
 *$py.class
+.venv/
+.pytest_cache/
+.coverage
+htmlcov/
 
 # Local scratch and data files
 issues.json

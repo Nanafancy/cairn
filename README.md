@@ -142,10 +142,11 @@ cd contracts && cargo test && stellar contract build && cd ..
 stellar keys generate deployer --network testnet --fund
 ./scripts/deploy-testnet.sh
 
-# 4. Start backend and database
-cp backend/.env.example backend/.env
-docker compose up -d db
-cd backend && pip install -r requirements.txt
+# 4. Start the backend
+cd backend
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
 uvicorn app.main:app --reload
 
 # 5. Start frontend
