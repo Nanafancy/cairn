@@ -5,9 +5,6 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-    # `labeled` / `unlabeled` moved to changelog.yml, the only job that reads
-    # labels. Re-running this whole pipeline because someone toggled a label was
-    # the single most expensive trigger in the repo.
     types: [ opened, synchronize, reopened ]
 
 # One job. `main` has no required status checks (protection exists but
