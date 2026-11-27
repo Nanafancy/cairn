@@ -1,5 +1,9 @@
 [workspace]
 members = [
+    "contracts/round-factory",
+    "contracts/round",
+    "contracts/project-registry",
+    "contracts/attester-registry",
     "contracts/common",
     "contracts/cross-chain",
     "contracts/governance",
